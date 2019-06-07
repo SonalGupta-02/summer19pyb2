@@ -3,6 +3,8 @@
 import  webbrowser 
 import  time
 import  subprocess
+import os
+import client
 option='''
 Press  1  to  start  your  vlc  media player :
 Press  2  to  play your fav song in youtube :  
@@ -30,6 +32,13 @@ elif  choice  ==  '1'  :
 elif  choice  ==  '3' :
     data=input("type your search :--->  ")
     webbrowser.open_new_tab('https://www.google.com/search?q='+data)
+
+elif  choice ==  '2' :
+   data=input("Your favourite song :---> ")
+   webbrowser.open_new_tab('https://www.youtube.com/watch?v=1-xGerv5FOk')
+
+elif  choice ==  '6':
+   os.system('reboot')   
 else  :
     print("hiiii")
 
